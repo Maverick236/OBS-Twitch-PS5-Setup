@@ -1,0 +1,33 @@
+{
+    "SceneCollection": "PS5_Twitch_Setup",
+    "Scenes": [
+        {
+            "Name": "PS5 Gameplay",
+            "Sources": [
+                {
+                    "Name": "PS5 Capture",
+                    "Type": "dshow_input",
+                    "Settings": {
+                        "device_name": "Your Capture Card",
+                        "resolution": "1920x1080",
+                        "fps": "60"
+                    }
+                },
+                {
+                    "Name": "Desktop Audio",
+                    "Type": "wasapi_output_capture",
+                    "Settings": {
+                        "device_name": "Default"
+                    }
+                },
+                {
+                    "Name": "Mic/Aux",
+                    "Type": "wasapi_input_capture",
+                    "Settings": {
+                        "device_name": "Default"
+                    }
+                }
+            ]
+        }
+    ]
+}
