@@ -1,0 +1,41 @@
+{
+    "Video": {
+        "BaseResolution": "1920x1080",
+        "OutputResolution": "1920x1080",
+        "FPS": "60",
+        "DownscaleFilter": "bilinear"
+    },
+    "Stream": {
+        "Encoder": "NVENC (new)",
+        "RateControl": "CBR",
+        "Bitrate": "6000",
+        "KeyframeInterval": "2",
+        "Preset": "quality",
+        "Profile": "high",
+        "Lookahead": true,
+        "PsychoVisualTuning": true,
+        "BFrames": 2
+    },
+    "Recording": {
+        "Type": "standard",
+        "Format": "mkv",
+        "Quality": "indistinguishable",
+        "Encoder": "x264",
+        "Bitrate": "25000"
+    },
+    "Audio": {
+        "SampleRate": "48000",
+        "Channels": "stereo",
+        "Tracks": {
+            "StreamTrack": 1,
+            "RecordingTrack": 2
+        }
+    },
+    "Advanced": {
+        "ProcessPriority": "above normal",
+        "Renderer": "Direct3D 11",
+        "ColorFormat": "NV12",
+        "ColorSpace": "709",
+        "ColorRange": "partial"
+    }
+}
